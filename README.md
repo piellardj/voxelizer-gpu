@@ -25,6 +25,7 @@ Grid size:
 * 256x256x256: 10 ms
 * 512x512x512: 120 ms
 
+With a 1,000,000 vertices model, the 128x128x128 grid computation takes 45 ms.
 
 # Algorithm
 This project uses OpenGL 3.3. Due to the lack of random texture writes, I have to proceed in several passes and use the hardware rasterization, adjusting near and far planes.
@@ -33,6 +34,6 @@ For better performance I store the grid in a compact grid (1 bit / voxel). Thank
 
 
 
-# COMPILATION
+# Compilation
 To compile this project requires SFML 2.3.2 and GLEW to compile (see Makefile).
 
